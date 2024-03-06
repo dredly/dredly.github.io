@@ -1,0 +1,23 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Welcome to my website</h1>
+			<p>
+				I enjoy diving into new technologies and concepts. You can find a few of my example projects here, as well as a blog where I sometimes write about what I find interesting
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

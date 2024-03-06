@@ -1,0 +1,33 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Personal Projects</h1>
+			<h3>Scrabble Trainer</h3>
+			<p>Front end web application made with simple HTML, CSS and JavaScript to practice quickly finding scrabble words given random combinations of letters. The letters are shuffled using a random seed, which can be shared with others in order to have a fair competition.</p>
+			<h4><a href="https://dredly.github.io/Scrabble-Trainer/">Try it out</a></h4>
+			<p><a href="https://github.com/dredly/Scrabble-Trainer">Source Code</a></p>
+			<h3>Spotify Sync</h3>
+			<p>A command line tool using the spotify API to keep one playlist synced with any public playlist (or multiple). Written with Go, and compiled to an executable that can be run as a CronJob</p>
+			<p><a href="https://github.com/dredly/spotify-sync-go">Source Code</a></p>
+			<h3>Leetcode-GitHub</h3>
+			<p>Command line tool which can automatically create a GitHub repo from all your LeetCode submissions, categorised by language</p>
+			<p><a href="https://github.com/dredly/leetcode-github">Source code</a></p>
+			<h3>Simple Query Builder</h3>
+			<p>Bare-bones Query builder library written in Rust</p>
+			<a href="https://github.com/Caramelised-Onion/simple-query-builder">Source Code</a>
+		</main>
+		<Footer />
+	</body>
+</html>
